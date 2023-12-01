@@ -8,23 +8,8 @@ var msg = process.env.RESPONSE;
 var response;
 
 app.get('/', function (req, res) {
-
-    response = 'Value in the APP_MSG env var is => ' + msg + '\n';
-
-    // Read in the secret file
-    fs.readFile('/opt/app-root/secure/myapp.sec', 'utf8', function (secerr,secdata) {
-        if (secerr) {
-            console.log(secerr + '\n');
-            response += secerr + '\n';
-        }
-        else {
-            response += 'The secret is => ' + secdata + '\n';
-        }
-
         //send the response to the client
-        res.send(response);
-    });
-
+        res.send(msg);
 });
 
 app.listen(8080, function () {
