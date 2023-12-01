@@ -3,7 +3,7 @@ var fs = require('fs')
 app = express();
 
 // read in the APP_MSG env var
-var msg = process.env.APP_MSG;
+var msg = process.env.RESPONSE;
 
 var response;
 
