@@ -1,0 +1,1 @@
+echo "mail sent successfully....."
