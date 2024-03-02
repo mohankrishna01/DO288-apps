@@ -1,0 +1,1 @@
+Astra inclinant, sed non obligant
