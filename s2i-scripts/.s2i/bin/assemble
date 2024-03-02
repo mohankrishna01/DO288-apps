@@ -14,7 +14,7 @@ echo "############## copy starts ###################"
 cp -Rf /tmp/src/*.html ./
 date=`date "+%F"`
 echo "############## create info file ###################"
-echo "$date" > ./info.html
+echo "$date" >> ./info.html
 echo "Astra inclinant, sed non obligant" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
